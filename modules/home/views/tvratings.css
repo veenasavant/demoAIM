@@ -1,0 +1,64 @@
+<!-- COPYRIGHT INFOSYS AIM 2016-2017  Styles -->	
+<style style="text/css">
+.bg {
+	
+	
+}
+
+@media (max-width: 767px) {
+
+#socialbuzz { display: none; }
+}
+
+.bg-1 { 
+    background-color:#474e5d; 
+    color: #ffffff;
+	font-family:  Arial,"AvenirNext-Regular-Mint", "Helvetica Neue", Arial, sans-serif !important;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+.bg-2 {
+	background-color:#474e5d;
+    /*background-color:#1abc9c; */
+    color: #ffffff;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+.bg-3 { 
+	background-color:#337ab7;
+   /* background-color:#1abc9c;  */
+    color: #ffffff;
+	padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+.bg-3  h4 {
+ margin: 0;
+ text-align: center;
+ /* Starting position */
+ /*transform:translateX(100%);
+ /* Apply animation to this element 	
+   animation: channel 5s linear infinite; */
+}
+/* Move it (define the animation) */
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@keyframes channel {
+ 0%   { 
+  transform: translateX(100%); 		
+ }
+ 100% { 
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+

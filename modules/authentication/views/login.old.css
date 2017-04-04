@@ -1,0 +1,99 @@
+<style style="text/css">
+a {
+    color: #45cae6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.help-block{
+	color:red;
+	font-size:10px;
+}
+.header {
+	color: white;
+	/*background-color: #2196f3;*/
+	/*background-color:#2e6da4;*/
+	background-color:#337ab7;
+	font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Arial, sans-serif !important;
+	text-align:center;
+		
+	display: block;
+	margin: 	0px;
+    padding-top: 0px;
+	padding-bottom: 0px;
+	outline: 0;
+	
+	border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	-webkit-text-stroke-color:white;
+	-webkit-text-fill-color:white;
+	-webkit-font-smoothing:subpixel-antialiased;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ 
+}
+
+.error {
+    text-align: center;
+    padding: 10px;
+	font-size:85%;
+	margin-bottom: 10px;
+    color: #737373;
+    background-color: #FCEDED;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+   
+}
+
+#input_label_text{
+	font-size: 85% !important;
+    font-weight: normal !important;
+    font-family: monospaced,"AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin-bottom: 5px;
+	color:#337ab7;
+}
+#terms-of-use-text
+{
+	font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Arial, sans-serif !important;
+	font-size:75%;
+	color:#337ab7;
+}
+#link-terms-of-use
+{
+	font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Arial, sans-serif !important;
+	font-size:90%;
+	color: #45cae6 !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Can be removed after sometime
+#infy-r-logo {
+    //background: url(/sitecollectionimages/responsive/logo.png) no-repeat;
+    width: 141px;
+    height: 53px;
+    float: left;
+    margin: 13px 0 4px;
+}
+
+a#logo-link {
+	
+    background: url(infosys-logo-reverse-col-JPEG.jpg) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    width: 141px;
+    height: 53px;
+    text-decoration: none;
+	margin: 13px 0 4px;
+    
+}
+*/
+
+</style>
+
+

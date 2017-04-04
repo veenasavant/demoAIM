@@ -1,0 +1,15 @@
+1. users.xmls is not there
+2.config.ini is not there
+3. Invalid user
+4. Valid user 
+5. Try invalid user
+6.Try invalid password
+7. Refresh screen login
+Try both options for QoE and AD Analytics from login page
+Also check the twitter and other pages when channel is swicthed off, See that they display xfinity stuff
+When channel is switched off , what is the banner on top say
+Try Issue, Rating and Channel change events
+Check the output file for each events
+Switch off the TV 
+
+When in TV Ratings App , refresh the screen - it deletes the user

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QoE Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      max-width: 85%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+<!-- Remember that the numbers are according to the timestamp of the screenshots - example 2 is 16:28, 3 is 16:29:41-->
+
+<!--div ng-app="Home" ng-controller="CarouselController"-->
+<div class="container-fluid">
+
+  <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="3000" data-pause="false">
+     
+	 <!-- Wrapper for slides -->
+	 
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(1);' src="images/2-Rating4.png" alt="2" >
+        <div class="carousel-caption">
+          <h3>Report by Rating-4</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(2);' src="images/3-Issue-Unclear.png" alt="3" >
+		<div class="carousel-caption">
+          <h3>Report By Issue</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(3);' src="images/4-Rating0.png" alt="4" >
+		<div class="carousel-caption">
+          <h3>Report By Rating-0</h3>
+        </div>
+       </div>
+
+      <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(4);' src="images/5-Rating0.png" alt="5" >
+		<div class="carousel-caption">
+          <h3>Report By Rating</h3>
+        </div>
+      </div>
+	   
+	   <div class="item">
+        <img class="img-responsive"  onclick='$("#myCarousel").carousel(5);' src="images/6-Gender.png" alt="6" >
+		<div class="carousel-caption">
+          <h3>Customers By Gender</h3>
+         </div>
+      </div>
+    
+      <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(6);' src="images/8-Area.png" alt="8" >
+		<div class="carousel-caption">
+          <h3>Customers By Area</h3>
+        </div>
+       </div>
+	   
+	   <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(7);' src="images/7-Age.png" alt="7"  >
+		<div class="carousel-caption">
+          <h3>Customers By Age-25</h3>
+         </div>
+       </div>
+	   
+	   <div class="item">
+        <img class="img-responsive"  onclick='$("#myCarousel").carousel(8);' src="images/9-Age.png" alt="9" >
+		<div class="carousel-caption">
+          <h3>Customers By Age-28</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img class="img-responsive" onclick='$("#myCarousel").carousel(0);' src="images/Last-Generic.png" alt="1" >
+		<div class="carousel-caption">
+          <h3>All at a glance</h3>
+         </div>
+       </div>
+      
+    </div> <!-- carousel inner -->
+   </div> <!--carousel class -->
+</div> <!--container fluid -->
+<!--/div--> <!-- ng-app-->
+<script type="text/javascript">
+$(document).ready(function(){
+    // Activate Carousel
+   $("#myCarousel").carousel({interval:3000,  
+   pause: "false"});
+  
+    // Enable Carousel Indicators
+	/* Not needed 
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    }); Not needed */
+});
+</script>
+
+</body>
+</html>
+

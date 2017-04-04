@@ -1,0 +1,193 @@
+ <!--COPYRIGHT INFOSYS AIM 1.1 2016-2017 -->
+<html lang="en">
+<head>
+  <title>Infosys AIM 1.1 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="modules/home/views/tvratings.css">
+  <script src="modules/home/views/tvratings.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
+</head>
+
+<style>
+ul.rating
+		{
+            display: inline-block;
+        }
+.rating li	{
+            list-style-type: none;
+            display: inline-block;
+            padding: 1px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+.rating{
+		color : blue;
+		margin:0;
+		padding :0;
+		}
+.rating .filled {
+            color: yellow;
+        }
+</style>
+<body>
+<div ng-app="Home" ng-controller="HomeController">
+ <div class="container-fluid bg-3 text-center" style="max-width:1300px">
+ <div class="row">
+    <div class="col-md-12" style="padding:1px">
+	<h5 style="margin:0px">Hello {{username}}, You Are Watching ..<span ng-show="chDesc !='OFF'" id="channel">{{chDesc}}</span> </h5>
+	</div>
+	</div>
+</div>
+  
+ <div class="container-fluid bg-1 text-center" style="max-width: 1300px" >
+    <!--div class="row" -->
+    <div class="col-md-7" style="padding:2px">
+	<div class="panel panel-default " style="margin:1px;max-height:340px;color:darkblue ;background-color:white" >
+	<div class="panel-body " style="padding:2px">
+	<div class="embed-responsive embed-responsive-16by9" >
+    <iframe id="video" class="embed-responsive-item" style="background-color:black" src=""></iframe>
+	</div>
+	
+	<!--iframe id="video" width = "500px" height="320 px" style="background-color:black" src="" frameborder="1" allowfullscreen>		</iframe-->
+	</div>
+	</div>
+	</div>
+	<div class="col-md-5" style="padding:2px">
+	<div class="panel panel-default" id="socialbuzz" style="margin:1px;max-height:340px;color:darkblue;background-color:white" >
+	<div class="panel-heading" style="background-color:lightyellow">
+	<!--h3 style="color:darkblue" >Audience Buzz</h3-->
+	<ul class="nav nav-tabs nav-justified" style="cursor:pointer;background-color:lightyellow">
+				<li class="active"><a data-toggle="tab" class="fa fa-twitter" href="/TVRatings#tw">TW</a></li>
+				<li><a data-toggle="tab" class="fa fa-google-facebook" href="/TVRatings#fb" >FB</a></li>
+				<li><a data-toggle="tab" class="fa fa-google-plus" href="/TVRatings#gplus">G+</a></li>
+				<li><a data-toggle="tab" class="fa fa-instagram" href="/TVRatings#ig">IG</a></li>
+	</ul>
+	</div>
+    <div class="panel-body " style="padding:4px;max-height:255px; color : darkblue ; overflow-y:scroll" >
+	
+	<div class="tab-content" >
+		<div id="tw" class="tab-pane fade in active") >
+		<a  class="twitter-timeline" href="https://twitter.com/xfinity" data-widget-id="808122197688451072" data-screen-name="xfinity">Tweets by @ISP</a>	
+		</div>
+		<div id="fb" class="tab-pane fade">
+		<iframe id = "fb_frame" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fxfinity&width=350&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=350" scrolling="yes" style="border:none ; height:350px;width:350px; overflow:hidden; background: white; float:left; " allowtransparency="true" frameborder="0"></iframe>
+		 </div>
+		<div id="gplus" class="tab-pane fade">
+		  <h3>G+</h3>
+		  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+		<div id="ig" class="tab-pane fade">
+		  <h3>IG</h3>
+		  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		</div>
+	  </div>
+	</div>
+	</div>
+	</div>
+	<!--/div-->
+  </div> 
+
+ <div class="container-fluid bg-2 text-center" style="max-width: 1300px">
+ 
+	<!--div class="row"-->
+	<div class="col-md-7" style="padding:2px" >
+	<div class="panel panel-default" style="margin:1px;max-height:240px ;">
+	<div class="panel-heading" style="padding:2px;background-color:lightyellow" ><h5 style="color:darkblue" > Channel Selectors </h5></div>
+    <div class="panel-body " style="padding:4px" >
+		  <div class="btn-group-md" >
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('31','BBC','1')" onclick="social_channel('BBC');displayChannel('BBC')" >BBC</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('30','CNN','1')" onclick="social_channel('CNN');displayChannel('CNN')" >CNN</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('35','NBC','1')" onclick="social_channel('NBC');displayChannel('NBC')" >NBC</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('33','CBS','1')" onclick="social_channel('CBS');displayChannel('CBS')" >CBS</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('34','MSNBC','1')" onclick="social_channel('MSNBC');displayChannel('MSNBC')">MSNBC</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('58','ESPN','1')" onclick="social_channel('ESPN');displayChannel('ESPN')" >ESPN</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('20','NAT GEO','1')" onclick="social_channel('NATGEO');displayChannel('NATGEO')" >NAT GEO</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('21','HBO','1')" onclick="social_channel('HBO');displayChannel('HBO')" >HBO</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('22','MTV','1')" onclick="social_channel('MTV');displayChannel('MTV')" >MTV</button>
+				<button type="button" class="btn btn-primary" style="width:100px" ng-click="addEvent('25','TCM','1')" onclick="social_channel('TCM');displayChannel('TCM')" >TCM</button>
+			</div>
+				<button type="button" class="btn btn-primary" style="margin-top:1px;width:100px" ng-click="addEvent('0','OFF','0')" onclick="social_channel('OFF');displayChannel('OFF');" ><span class="glyphicon glyphicon-off"></span></button>
+			
+		</div>
+	
+	
+
+	</div>
+	</div>
+	<div class="col-md-2" style="padding:2px">
+	
+	<div class="panel panel-default " style="margin:1px;max-height:240px ;" style="color:darkblue"  >
+	<div class="panel-heading" style="padding:2px;background-color:lightyellow" ><h5 style="color:darkblue"> Rate Us </h5></div>	
+	<div class="panel-body" style="padding:5px">
+			<ul class="rating" >
+            <li ng-repeat="n in [].constructor(maxRating) track by $index">
+                <span ng-click="rateBy($index+1)" ng-show="ratedBy > $index" class="filled">&#9733;</span>
+                <span ng-click="rateBy($index+1)" ng-show="ratedBy <= $index">&#9733;</span>
+            </li>
+           </ul>
+		   <br>
+		   <button class="btn btn-primary " ng-click="addUserRating(chId,chDesc,ratedBy)" onclick="displayDate()" >Submit
+		   </button>
+		   <br><br><br>
+	</div>		
+	</div>
+	</div>
+	
+	<div class="col-md-3" style="padding:2px">
+	<div class="panel panel-default"; style="margin:1px;max-height:240px;color:darkblue"  >
+	
+	<ul class="nav nav-tabs nav-justified"  style="cursor:pointer;background-color:lightyellow">
+	<li class="active"><a data-toggle="tab" href="/TVRatings#report"><h5 style="margin:0px" >Report Issue</h5></a></li>
+	<li><a data-toggle="tab" href="/TVRatings#track" onclick="displayDate()"><h5 style="margin:0px">Track Issue</h5></a></li>
+	<li><a data-toggle="tab" href="/TVRatings#carousel" onclick="location.href='#/carousel'"><h5 style="margin:0px">QoE Dashboard</h5></a></li>
+  	</ul>
+
+	<div class="panel-body " style="padding:5px">
+	<div class="tab-content">
+	  <div id="report" style="text-align:center-left" class="tab-pane fade in active">
+			<div class="radio">
+				<label><input type="radio"  name="issue" value="NO PICTURE" ng-model="myIssue" >No Transmission</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="issue" value="UNCLEAR" ng-model="myIssue">Unclear Picture</label>
+			</div>
+				<button class="btn btn-primary" ng-click="addIssue(myIssue,chId,chDesc)">Submit</button>	
+	  </div>
+	  <div id="track" class="tab-pane fade">
+			<p> We are working to resolve your issue  by </p>
+			<p id="eta"></p>
+	  </div>
+	  <div id="carousel" class="tab-pane fade">		
+	  </div>
+	 </div>
+	</div>	
+	</div>	<!-- panel body -->	
+	</div>
+	<!--/div-->
+	
+</div>
+</div>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+if(!d.getElementById(id)){
+js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);
+//window.alert("Inside Twitter Script");
+}}(document,"script","twitter-wjs");
+</script>
+
+</body>
+</html>
+
+
+
+

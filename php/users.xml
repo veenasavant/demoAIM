@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+	<userid>100001</userid>
+	<username>ecscion</username>
+	<password>innovate@123</password>
+  </user>
+  <user>
+	<userid>100002</userid>
+	<username>aimuser</username>
+	<password>aim@123</password>
+  </user>
+   <user>
+	<userid>100003</userid>
+	<username>demouser</username>
+	<password>demo@123</password>
+  </user>
+  <user>
+	<userid>100004</userid>
+	<username>vee</username>
+	<password>vee123</password>
+  </user>
+</users>
