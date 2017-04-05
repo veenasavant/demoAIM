@@ -147,9 +147,9 @@ ul.rating
 	<div class="panel panel-default"; style="margin:1px;max-height:240px;color:darkblue"  >
 	
 	<ul class="nav nav-tabs nav-justified"  style="cursor:pointer;background-color:lightyellow">
-	<li class="active"><a data-toggle="tab" href="/TVRatings#report"><h5 style="margin:0px" >Report Issue</h5></a></li>
-	<li><a data-toggle="tab" href="/TVRatings#track" onclick="displayDate()"><h5 style="margin:0px">Track Issue</h5></a></li>
-	<li><a data-toggle="tab" href="/TVRatings#carousel" onclick="location.href='#/carousel'"><h5 style="margin:0px">QoE Dashboard</h5></a></li>
+	<li class="active"><a data-toggle="tab" href="/TVRatings#report"><h6 style="margin:0px" >Report Issue</h6></a></li>
+	<li><a data-toggle="tab" href="/TVRatings#eventgenerator" onclick="location.href='#/EventGenerator'"><h6 style="margin:0px">QoE Generator</h6></a></li>
+	<li><a data-toggle="tab" href="/TVRatings#carousel" onclick="location.href='#/Carousel'"><h6 style="margin:0px">QoE Dashboard</h6></a></li>
   	</ul>
 
 	<div class="panel-body " style="padding:5px">
@@ -163,12 +163,8 @@ ul.rating
 			</div>
 				<button class="btn btn-primary" ng-click="addIssue(myIssue,chId,chDesc)">Submit</button>	
 	  </div>
-	  <div id="track" class="tab-pane fade">
-			<p> We are working to resolve your issue  by </p>
-			<p id="eta"></p>
-	  </div>
-	  <div id="carousel" class="tab-pane fade">		
-	  </div>
+	  <div id="eventgenerator" class="tab-pane fade"></div>
+	  <div id="carousel" class="tab-pane fade"></div>
 	 </div>
 	</div>	
 	</div>	<!-- panel body -->	

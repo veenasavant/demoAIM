@@ -9,10 +9,14 @@ var app = angular.module('Home', []);
 /* For carousel */
 app.controller('CarouselController',['$window', function ($window) {
 	//window.alert("Inside Carousel control ");
-  $window.location = 'modules/home/views/carousel.html';
+  $window.location = 'modules/home/views/Carousel.html';
   
 }]);
-
+app.controller('EventGeneratorController',['$window', function ($window) {
+	//window.alert("Inside Event Generator ");
+  $window.location = 'modules/home/views/EventGenerator.html';
+  
+}]);
 app.controller('HomeController', ['$scope', '$rootScope','$cookieStore','$http', function($scope,$rootScope,$cookieStore,$http) 
     {
 		

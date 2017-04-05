@@ -2,16 +2,22 @@ How to deploy on server
 1. Make a new directory 
 2. copy WEB-INF from prev-version directory
 3. Copy all except java and web-inf from f: to this new directory
-4. Dont copy output directory
+4. Dont copy output file.
 
-Version 10 on srver to be deployed as demoAIM_v10
+Version 10 deployed as demoAIM_v10 - deployed April 4 2017
+Change 1:
+1.Introduced a new Events Generator Page.The following fles have been changed or created afresh
+	app.js,homecontroller.js, TVRAtings.html, eventgenerator.js , eventgenerator.css , EventGenerator.html
+2. Small change; carousel.hmtl renamed as Carousel.html. Files Changed : app.js , homecontroller.js
+
+Version 10 deployed as demoAIM_v10 - deployed February 9 2017
 Changes
 1) carousel - files changed app.js, homecontroller.js, carousel.html, images directory in home/views folder
 
-Version 10 on my server deployed as demoAIM_v9 - deployed Jan 31 2017
+Version 10 on my server deployed as demoAIM_v9 - deployed January 31 2017
 Changes 
 1. For refresh button to work n TV APP screen cookie stores userid - authservices.js, homecontroller.js
-2. Removed the UserCredentials service from code. Files changed - authservices.js , authcontroller.js in authentication
+2. Removed the UserCredentials service from code. - Files changed - authservices.js , authcontroller.js in authentication
 3. Moved app.js tp app directory
 4. index.html refers to new files with new names authcontroller.js authservces.js homecontroller.js
 5. New images directory in authetntication/views where all images are stored
@@ -20,7 +26,7 @@ Changes
 10. Some changes to the main screen in tvratings.css and TVRatings.html
 11. Added id ="socialbuzz" to TVRatings screen so that the social pages do not show on small screens - css and html files changed.
 
-Version 9 deployed Jan 26 2017
+Version 9 deployed - January 26 2017
 1. new php script to check user and password
 2. This scripts reads users.xml kept in the same directory
 3. $rootscope is introduced to store the username and userid

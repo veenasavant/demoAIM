@@ -23,9 +23,13 @@ angular.module('Main', [
             controller: 'HomeController',
             templateUrl: 'modules/home/views/TVRatings.html'
         })
-		.when('/carousel', {
+		.when('/Carousel', {
             controller: 'CarouselController',
-            templateUrl: 'modules/home/views/carousel.html'
+            templateUrl: 'modules/home/views/Carousel.html'
+        })
+		.when('/EventGenerator', {
+            controller: 'EventGeneratorController',
+            templateUrl: 'modules/home/views/EventGenerator.html'
         })
 		.when('/Amscaler', {
             controller: 'AmscalerController',

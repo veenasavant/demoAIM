@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./eventgenerator.css">
+    <script src="./eventgenerator.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row dummy"> <h4></h4></div>
+			
+	<div class="col-md-offset-3 col-md-5">	
+	
+	<div class="row header">
+		<h5>QoE EVENTS GENERATOR </h5>
+	</div> 
+	<div class="row dummy"> </div>
+	
+	<div class ="row"> <!-- Main form row -->
+		<div class="col-md-2">  </div>
+		<div class="col-md-8" style="padding:0px">
+			
+			<div class="row record">
+				<h5 id="datetime"  >Enter Parameters </h5>
+				<p id="eventdata" >Press START to begin and STOP to end </p>
+			</div>
+			<div class ="row" style="margin:0px;text-align:left">
+				<form>
+					<div class="form-group">
+					  <label id="input_label_text" for="numusers">Number of Users (1-100):</label>
+					  <input type="number" value="100" min="1" max ="100" class="form-control" id="numusers">
+					</div>
+					<div class="form-group">
+					  <label id="input_label_text" for="numchannels" >Number of Channels (1-10):</label>
+					  <input type="number" value="10" min="1" max="10" class="form-control" id="numchannels">
+					</div>
+					<div class="form-group">
+					  <label id="input_label_text" for="numseconds" >Interval in secs (1-60):</label>
+					  <input type="number" value="3" min="1" max="60" class="form-control" id="numseconds">
+					</div>
+				 	<div class="form-actions  text-center">
+						<button id="start" onclick="myStartFunction()" type="submit" style="font-size:90%" class="btn-lg btn-primary">START</button>
+						<button id="stop" onclick="myStopFunction()" type="submit" style="font-size:90%"  class="btn-lg btn-primary">STOP</button>
+					</div>
+				</form>
+			</div> 
+		</div> <!-- col-md-10-->
+		<div class="col-md-1">	</div>
+	</div> 	<!--login form row-->
+	</div>	<!-- col-md-5-->
+</div>	<!-- main container -->
+</body>
+
+
+</body>
+</html>
